@@ -1,4 +1,4 @@
-## May 12 | Final Project: Artify
+## May 12 | Final Project: Digital Ghost
 
 ### Roadtrip through unsucessful ideas
 
@@ -33,6 +33,11 @@ I decided to reevaluate my idea and create a city in VR that tells the story of 
 Finally I have setttled on code generated art.
 
 ![img](https://github.com/martapienkosz/connectionslab/edit/main/finalProject/dcmt/aframe.png)
+
+
+### Concept
+
+The aim of this project is to show the presence of other people on the Internet site. Sometimes, when using the Internet, we are not aware of the number of people who look at the same piece of information at exactly the same time. We can only sense the presence of these people when they add a comment under the post or publish a new post on social media. Through this project, I wanted to connect two users with each other. The squabbling data sent to the server makes the project visually more attractive and shows the digital presence of the user's "digital ghost".
 
 
 ### Three.js
@@ -142,7 +147,5 @@ socket.on("camPos", (data) => {
 })
 ```
 
-
-Cool!
-
-![img](https://github.com/martapienkosz/connectionslab/edit/main/finalProject/dcmt/artsy.png)
+And the final outcome:
+![img](https://github.com/martapienkosz/connectionslab/edit/main/finalProject/dcmt/final.gif)
