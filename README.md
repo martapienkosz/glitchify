@@ -4,11 +4,11 @@
 
 I must admit that I struggled a lot with coming up with an idea for this assignment. At first, I wanted to create a cute cozy coffeeshop in A-Frame and allow users to interact by making a clay object. I created a 3d model and tested socket connections.
 
-![img](https://github.com/martapienkosz/connectionslab/edit/main/finalProject/dcmt/coffe.png)
+![img](https://github.com/martapienkosz/glitchify/blob/main/dcmt/coffe.png)
 
 Everything worked fine until I started to intensively add new "spheres", instances of the clay. Everything started to excessively lag. **Learnings**: Getting familiar with A-Frame!
 
-![img](https://github.com/martapienkosz/connectionslab/edit/main/finalProject/dcmt/clay.png)
+![img](https://github.com/martapienkosz/glitchify/blob/main/dcmt/clay.png)
 
 ```
 this.addMarker = function(e) {
@@ -32,7 +32,7 @@ I decided to reevaluate my idea and create a city in VR that tells the story of 
 
 Finally I have setttled on code generated art.
 
-![img](https://github.com/martapienkosz/connectionslab/edit/main/finalProject/dcmt/aframe.png)
+![img](https://github.com/martapienkosz/glitchify/blob/main/dcmt/aframe.png)
 
 
 ### Concept
@@ -75,11 +75,11 @@ geometry.setAttribute("color", new THREE.Float32BufferAttribute(colors, 3)); // 
 const mesh = new THREE.Mesh(geometry, material) // initialize artwork
 ```
 
-![img](https://github.com/martapienkosz/connectionslab/edit/main/finalProject/dcmt/artwork.png)
+![img](https://github.com/martapienkosz/glitchify/blob/main/dcmt/artwork.png)
 
 Then I explored the `GUI elements` for changing various graphics parameters. I have set up sockets connection and emitted the camera position as well. Thanks to this, users were able to modify main artwork using the keyboard and mouse.
 
-![img](https://github.com/martapienkosz/connectionslab/edit/main/finalProject/dcmt/gui.png)
+![img](https://github.com/martapienkosz/glitchify/blob/main/dcmt/gui.png)
 
 
 ```
@@ -99,7 +99,7 @@ socket.on('colorValueFromServer', (data)=> {
 });
 ```
 
-![img](https://github.com/martapienkosz/connectionslab/edit/main/finalProject/dcmt/scale.gif)
+![img](https://github.com/martapienkosz/glitchify/blob/main/dcmt/scale.gif)
 
 During the playtesting, one of my friends recommended me to check the `PoseNet` library and encouraged me to try to change the graphics parameters depending on the user's movement. I watched some [tutorials]((https://www.youtube.com/watch?v=OIo-DIOkNVg&t=601s)) and looked for [ways](https://annakap.medium.com/integrating-ml5-js-posenet-model-with-three-js-b19710e2862b) to integrate this library with `Three.js`.
 
@@ -119,7 +119,7 @@ poseNet.on('pose',  function(results) {
 });
 ```
 
-![img](https://github.com/martapienkosz/connectionslab/edit/main/finalProject/dcmt/video.png)
+![img](https://github.com/martapienkosz/glitchify/blob/main/dcmt/video.png)
 
 Eventually I worked on emitting and receiving this data through the sockets.
 
@@ -148,4 +148,4 @@ socket.on("camPos", (data) => {
 ```
 
 And the final outcome:
-![img](https://github.com/martapienkosz/connectionslab/edit/main/finalProject/dcmt/final.gif)
+![img](https://github.com/martapienkosz/glitchify/blob/main/dcmt/final.gif)
